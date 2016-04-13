@@ -1,0 +1,1 @@
+module.exports = require('./dist/react-listview.js').ReactListView;

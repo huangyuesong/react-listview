@@ -1,0 +1,62 @@
+.ajax-wrapper {
+  .react-listview-wrapper {
+    background: white;
+    overflow: scroll;
+
+    .react-listview-loading {
+      & > div {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+    .react-listview-content {
+      background-color: white;
+      height: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 10px 0 0;
+      .item {
+        height: 70px;
+        line-height: 70px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .img-wrapper {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          img {
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+            margin-top: 15px;
+          }
+        }
+        .topic-info-wrapper {
+          flex: 3;
+          color: rgba(0, 0, 0, 0.75);
+        }
+      }
+    }
+    .list-view-refresh {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .react-listview-pull-ui {
+      .pull-ui-info {
+        color: rgba(0, 0, 0, 0.45);
+        .fa {
+          transition: all .25s ease;
+        }
+      }
+    }
+  }
+
+  .loading, .footer-loading {
+    & > div {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

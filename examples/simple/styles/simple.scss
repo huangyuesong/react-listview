@@ -1,0 +1,31 @@
+.simple-wrapper {
+  .react-listview-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    overflow: scroll;
+    .react-listview-content {
+      background-color: white;
+      height: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .list-view-refresh {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .react-listview-pull-ui {
+      .pull-ui-info {
+        .fa {
+          transition: all .25s ease;
+        }
+      }
+    }
+    .footer-loading {
+      & > div {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,35 @@
+.react-listview-wrapper {
+  position: relative;
+  .react-listview-pull-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: none;
+    height: 50px;
+    .pull-ui-info {
+      height: 50px;
+      overflow: hidden;
+      color: white;
+      background: none;
+      text-align: center;
+      line-height: 50px;
+    }
+    .react-listview-loading {
+      display: inline-block;
+      height: 100%;
+      line-height: 50px;
+    }
+  }
+  .react-listview-content {
+    z-index: 20;
+    .on-end-reached-loading {
+      height: 50px;
+      line-height: 50px;
+      .spinner > div {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

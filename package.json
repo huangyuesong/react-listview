@@ -1,0 +1,99 @@
+{
+  "name": "@scfe/react-listview",
+  "version": "1.0.30",
+  "description": "react listview",
+  "scripts": {
+    "test": "jest",
+    "test:w": "jest --watch",
+    "test:c": "jest --coverage",
+    "build": "NODE_ENV=production webpack -p && NODE_ENV=production-ex webpack -p",
+    "start": "NODE_ENV=development webpack-dev-server --inline --hot --port 8083 --colors",
+    "patch": "npm run build && git add dist && git commit -m 'build' && npm version patch && mnpm publish",
+    "build-ex": "NODE_ENV=production-ex webpack -p"
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "BSD",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "mt-component"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-jest": "^6.0.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "css-loader": "^0.23.0",
+    "dev-ip": "^1.0.1",
+    "es6-promise": "^3.0.2",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.11.3",
+    "fetch-detector": "^1.0.0",
+    "fetch-polyfill": "^0.8.2",
+    "html-webpack-plugin": "^1.7.0",
+    "inobounce": "^0.1.2",
+    "jest-cli": "^0.8.1",
+    "jest-webpack-alias": "^2.0.0",
+    "js2html-webpack-plugin": "^1.0.0",
+    "lodash": "^3.10.1",
+    "node-sass": "^3.4.2",
+    "phantomjs": "^1.9.19",
+    "react": "^0.14.3",
+    "react-addons-test-utils": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^2.0.0-rc5",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "spec.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ]
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "c3579c6f4aa2b70944d5ca4f0bc379870c4d3a53",
+  "_id": "@scfe/react-listview@1.0.30",
+  "_shasum": "67704cf1d9056423c02ffd9aad74b1fb944213d7",
+  "_from": "@scfe/react-listview@*",
+  "_npmVersion": "3.5.2",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "name": "zhanglingyong",
+    "email": "zhanglingyong@meituan.com"
+  },
+  "maintainers": [
+    {
+      "name": "zhanglingyong",
+      "email": "zhanglingyong@meituan.com"
+    }
+  ],
+  "dist": {
+    "shasum": "67704cf1d9056423c02ffd9aad74b1fb944213d7",
+    "size": 148591,
+    "key": "/@scfe/react-listview/-/@scfe/react-listview-1.0.30.tgz",
+    "tarball": "http://r.npm.sankuai.com/@scfe/react-listview/download/@scfe/react-listview-1.0.30.tgz"
+  },
+  "_publish_on_cnpm": true,
+  "_cnpm_publish_time": 1453456710026,
+  "_resolved": "http://r.npm.sankuai.com/@scfe/react-listview/download/@scfe/react-listview-1.0.30.tgz"
+}

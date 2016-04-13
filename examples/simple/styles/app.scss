@@ -1,0 +1,22 @@
+.app-wrapper {
+  .list-wrapper {
+    & > ul {
+      list-style: none;
+      padding-left: 0;
+      & > li {
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        a {
+          text-decoration: none;
+          color: cadetblue;
+        }
+      }
+    }
+  }
+  .info-wrapper {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
